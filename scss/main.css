@@ -1,0 +1,603 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.gopheader-menu {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+.top-header {
+  background: rgba(2, 0, 36, 0.5);
+  border-top: 3px solid #405552;
+  border-bottom: 3px solid #405552;
+}
+.top-header .wrap-top {
+  height: 40px;
+  line-height: 40px;
+}
+.top-header .wrap-top .cotrai {
+  padding-left: 0px;
+}
+.top-header .wrap-top .cotrai ul {
+  margin-bottom: 0px;
+}
+.top-header .wrap-top .cotrai ul li {
+  float: left;
+}
+.top-header .wrap-top .cotrai ul li a {
+  color: #ffffff;
+  padding-right: 18px;
+  padding-left: 18px;
+  display: block;
+  border-right: 3px solid #405552;
+}
+.top-header .wrap-top .cotrai ul li a:hover {
+  color: lightblue;
+}
+.top-header .wrap-top .cotrai ul li a.first {
+  padding-left: 0px;
+}
+.top-header .wrap-top .cotphai {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0px;
+}
+.top-header .wrap-top .cotphai a {
+  color: #ffffff;
+}
+.top-header .wrap-top .cotphai a:hover {
+  color: lightblue;
+}
+
+.menu {
+  background: rgba(2, 0, 36, 0.5);
+}
+.menu .container .cottrai {
+  padding-left: 0px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.menu .container .cottrai ul {
+  margin-bottom: 0px;
+}
+.menu .container .cottrai ul li {
+  float: left;
+}
+.menu .container .cottrai ul li a {
+  padding-right: 65px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+.menu .container .cottrai ul li a img.trai {
+  position: absolute;
+  transform: rotate(90deg);
+  width: 41px;
+  top: -10px;
+  left: -60px;
+  transition: 0.2s;
+  opacity: 0;
+}
+.menu .container .cottrai ul li a img.phai {
+  position: absolute;
+  top: 0px;
+  right: -65px;
+  width: 41px;
+  height: 41px;
+  transition: 0.2s;
+  opacity: 0;
+}
+.menu .container .cottrai ul li a:hover img.trai {
+  left: -20px;
+  opacity: 1;
+}
+.menu .container .cottrai ul li a:hover img.phai {
+  right: -15px;
+  opacity: 1;
+}
+.menu .container .cottrai ul li a.last {
+  padding-right: 0px;
+}
+.menu .container .cottrai ul li a.active img.trai {
+  left: -20px;
+  opacity: 1;
+}
+.menu .container .cottrai ul li a.active img.phai {
+  left: 70px;
+  opacity: 1;
+}
+.menu .container .logo a img {
+  margin-top: 30px;
+}
+.menu .container .cotphai {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  justify-content: flex-end;
+  display: flex;
+  padding-right: 0px;
+}
+.menu .container .cotphai ul {
+  margin-bottom: 0px;
+}
+.menu .container .cotphai ul li {
+  float: left;
+}
+.menu .container .cotphai ul li a {
+  padding-right: 65px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+.menu .container .cotphai ul li a img.trai {
+  position: absolute;
+  transform: rotate(90deg);
+  width: 41px;
+  top: -10px;
+  left: -60px;
+  transition: 0.2s;
+  opacity: 0;
+}
+.menu .container .cotphai ul li a img.phai {
+  position: absolute;
+  top: 0px;
+  right: -65px;
+  width: 41px;
+  height: 41px;
+  transition: 0.2s;
+  opacity: 0;
+}
+.menu .container .cotphai ul li a:hover img.trai {
+  left: -20px;
+  opacity: 1;
+}
+.menu .container .cotphai ul li a:hover img.phai {
+  right: -15px;
+  opacity: 1;
+}
+.menu .container .cotphai ul li a.last {
+  padding-right: 0px;
+}
+
+.form {
+  background: url(../images/bgform.jpg);
+  position: absolute;
+  top: 830px;
+  width: 100%;
+}
+.form .nentren {
+  background-color: #001519;
+}
+.form .nentren .form-chinh nav {
+  border: 2px solid #00ccff;
+  border-bottom: none;
+}
+.form .nentren .form-chinh nav .nav-tabs a {
+  font-family: 'Oswald', sans-serif;
+  border-right: 2px solid #00ccff;
+  border-radius: 0px;
+  text-align: center;
+  color: white;
+}
+.form .nentren .form-chinh nav .nav-tabs a.khachsan {
+  width: 30%;
+  background: url("../images/khachsan.png") no-repeat 40px -5px;
+}
+.form .nentren .form-chinh nav .nav-tabs a.tour {
+  width: 20%;
+  background: url("../images/tour.png") no-repeat 20px -5px;
+}
+.form .nentren .form-chinh nav .nav-tabs a.datve {
+  width: 20%;
+  background: url("../images/datve.png") no-repeat 10px -5px;
+}
+.form .nentren .form-chinh nav .nav-tabs a.thuexe {
+  border-right: none;
+  width: 30%;
+  background: url("../images/xe.png") no-repeat 40px -5px;
+}
+.form .nentren .form-chinh nav .nav-tabs a.active {
+  background-color: #617376;
+}
+.form .tab-content {
+  background-color: rgba(97, 110, 112, 0.7);
+  padding-top: 50px;
+  padding-bottom: 95px;
+  border: 2px solid #00ccff;
+  border-left: none;
+  border-right: none;
+}
+.form .tab-content .tab-pane h2 {
+  font-family: 'Oswald';
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+.form .tab-content .tab-pane select {
+  width: 280px;
+  height: 35px;
+}
+.form .tab-content .tab-pane input {
+  height: 35px;
+  width: 148px;
+}
+.form .nenduoi {
+  background-color: #001519;
+  height: 45px;
+}
+
+.gioithieu {
+  height: 580px;
+  margin-top: 300px;
+}
+.gioithieu .tieude {
+  width: 520px;
+  margin: 30px auto;
+}
+.gioithieu .tieude span {
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 25px;
+}
+.gioithieu .tieude span.mauxanh {
+  color: #66ccff;
+}
+.gioithieu .tieude p {
+  margin-top: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+.gioithieu .content .motcot {
+  text-align: center;
+  position: relative;
+  padding: 50px 20px 20px 0px;
+  transition: 0.3s;
+}
+.gioithieu .content .motcot .concac {
+  margin-bottom: 85px;
+}
+.gioithieu .content .motcot .concac span {
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 22px;
+}
+.gioithieu .content .motcot img {
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  transition: 0.3s;
+}
+.gioithieu .content .motcot span.mauxanh {
+  color: #66ccff;
+}
+.gioithieu .content .motcot p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+}
+.gioithieu .content .motcot a.btn {
+  border: 2px solid #00ccff;
+  color: black;
+  font-family: 'Oswald';
+  width: 150px;
+  position: absolute;
+  bottom: -10px;
+  left: 58px;
+  z-index: 99;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+.gioithieu .content .motcot:hover {
+  border: 1px solid black;
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.gioithieu .content .motcot:hover a.btn {
+  opacity: 1;
+  bottom: -20px;
+}
+.gioithieu .content .motcot:hover img {
+  top: 100px;
+}
+
+.suluachon {
+  background: url("../images/bgluachon.jpg");
+  height: 509px;
+}
+.suluachon .col-md-6 {
+  height: 330px;
+}
+.suluachon .col-md-6 .tieude {
+  margin-top: 90px;
+}
+.suluachon .col-md-6 .tieude span {
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 25px;
+}
+.suluachon .col-md-6 .tieude span.mauxanh {
+  color: #66ccff;
+}
+.suluachon .col-md-6 .tieude p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  color: white;
+  font-style: italic;
+}
+.suluachon .col-md-6 .duoi {
+  display: flex;
+}
+.suluachon .col-md-6 .duoi .trai {
+  position: relative;
+  width: 50%;
+}
+.suluachon .col-md-6 .duoi .trai h2 {
+  font-family: 'Oswald';
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 152px;
+  left: 80px;
+  font-size: 40px;
+}
+.suluachon .col-md-6 .duoi .trai img {
+  position: absolute;
+  top: 62px;
+  left: 5px;
+}
+.suluachon .col-md-6 .duoi .phai {
+  width: 50%;
+  position: relative;
+}
+.suluachon .col-md-6 .duoi .phai h2 {
+  font-family: 'Oswald';
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 135px;
+  left: 90px;
+  font-size: 35px;
+}
+.suluachon .col-md-6 .duoi .phai img {
+  position: absolute;
+  top: 60px;
+  left: 26px;
+}
+
+.canhsac {
+  height: 1050px;
+}
+.canhsac .tieude {
+  margin-top: 90px;
+}
+.canhsac .tieude span {
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 25px;
+}
+.canhsac .tieude span.mauxanh {
+  color: #66ccff;
+}
+.canhsac .tieude p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+.canhsac .canhdep .motcanh {
+  position: relative;
+}
+.canhsac .canhdep .motcanh a.hinhtron {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  opacity: 0;
+}
+.canhsac .canhdep .motcanh a.danang {
+  animation-delay: 1s;
+}
+.canhsac .canhdep .motcanh a.hoian {
+  animation-delay: 0.5s;
+}
+.canhsac .canhdep .motcanh:hover {
+  opacity: 0.8;
+}
+
+.solieu {
+  background: url("../images/bgsolieu.jpg");
+}
+.solieu .canhchinh {
+  height: 518px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.solieu .canhchinh div {
+  position: relative;
+  font-size: 30px;
+  font-family: 'Oswald';
+  color: white;
+}
+.solieu .canhchinh div img.khungtrai {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: rotate(90deg);
+}
+.solieu .canhchinh div img.khungphai {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.tour .tieude {
+  margin-top: 90px;
+}
+.tour .tieude span {
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 25px;
+}
+.tour .tieude span.mauxanh {
+  color: #66ccff;
+}
+.tour .tieude p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 20px;
+}
+.tour .bonhinh {
+  display: flex;
+}
+.tour .bonhinh div {
+  width: 20%;
+  height: 800px;
+  padding-top: 30px;
+}
+.tour .bonhinh div span {
+  font-family: 'Oswald';
+  font-size: 15px;
+  color: white;
+  font-family: 'Oswald';
+  font-weight: bold;
+}
+.tour .bonhinh div span.mauxanh {
+  color: #66ccff;
+}
+.tour .bonhinh p {
+  margin-top: 50%;
+  color: white;
+}
+.tour .bonhinh a.btn {
+  border-radius: 0px;
+  border-width: 2px;
+}
+.tour .bonhinh div.truotvan {
+  background: url("../images/tuour1.jpg");
+}
+.tour .bonhinh div.lanbien {
+  background: url("../images/tour2.jpg");
+}
+.tour .bonhinh div.denlong {
+  background: url("../images/tour3.jpg");
+}
+.tour .bonhinh div.canhac {
+  background: url("../images/tour5.jpg");
+}
+.tour .bonhinh div.lamgom {
+  background: url("../images/tour4.jpg");
+}
+
+.tieude {
+  margin-top: 90px;
+}
+.tieude span {
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 25px;
+}
+.tieude span.mauxanh {
+  color: #66ccff;
+}
+.tieude p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.anhnensukien {
+  position: relative;
+}
+.anhnensukien .anhden {
+  position: absolute;
+  top: 0;
+  left: 500px;
+  opacity: 0;
+}
+
+.footer {
+  background: url("../images/footer.jpg");
+  height: 600px;
+}
+.footer .backgroun {
+  background: rgba(2, 0, 36, 0.5);
+  height: 100%;
+}
+.footer .backgroun .logo {
+  margin-top: 50px;
+}
+.footer .backgroun .infor p {
+  color: white;
+}
+.footer .backgroun .infor p i {
+  color: #57cbf5;
+}
+.footer .backgroun .hihi {
+  margin-top: 50px;
+  margin-left: 200px;
+  display: block;
+}
+
+.slide {
+  position: absolute;
+  z-index: 3;
+}
+
+.bienmatplay {
+  opacity: 0;
+}
+
+.xoaytron {
+  animation: chayxoaytron 2s forwards;
+}
+
+@-webkit-keyframes chayxoaytron {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px) rotate(360deg);
+    opacity: 1;
+  }
+}
+.chaylungtung {
+  animation: chaychay 2s forwards;
+}
+
+@-webkit-keyframes chaychay {
+  0% {
+    transform: translateX(300px);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(150px);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(-485px);
+    opacity: 1;
+    animation-delay: 0.5s;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

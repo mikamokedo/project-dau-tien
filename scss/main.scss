@@ -1,0 +1,744 @@
+@import "mixin";
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li{
+	list-style: none;
+}
+
+a{
+	&:hover{	text-decoration: none;
+		}
+}
+.gopheader-menu{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+
+}
+.top-header{
+	background: rgba(2,0,36,0.5);
+	border-top: 3px solid #405552;
+	border-bottom: 3px solid #405552;
+
+.wrap-top{
+		
+		height: 40px;
+		line-height: 40px;
+		.cotrai{
+			padding-left: 0px;
+			ul{
+				margin-bottom: 0px;
+
+				li{
+						float: left;
+					a{
+						color: #ffffff;
+						padding-right:18px;
+						padding-left:18px;
+						display: block;
+						border-right: 3px solid #405552;
+						&:hover{color: lightblue;}
+
+
+					}
+					a.first{
+						padding-left: 0px;
+					}
+				}
+			}
+		}
+		.cotphai{
+				display: flex;
+				justify-content: flex-end;
+				padding-right: 0px;
+			a{
+				color: #ffffff;
+				&:hover{color: lightblue;}
+
+			}
+		}
+}
+}
+
+ // het phan top-header
+
+.menu{
+	background: rgba(2,0,36,0.5);
+
+	.container{
+		.cottrai{
+			padding-left: 0px;
+			padding-top: 70px;
+			padding-bottom: 30px;
+			ul{
+				margin-bottom: 0px;
+				li{
+					float: left;
+					a{
+						img.trai{
+							position: absolute;
+							transform: rotate(90deg);
+							width: 41px;
+							    top: -10px;
+							    left: -60px;
+							    transition: 0.2s;
+							    opacity: 0;
+						}
+
+						
+					img.phai{
+							position: absolute;
+							top: 0px;
+						    right: -65px;
+						    width: 41px;
+						    height: 41px;
+						    transition: 0.2s;
+						    opacity: 0;
+						}
+						padding-right: 65px;
+						font-family: 'Oswald', sans-serif;
+						color: white;
+						font-size: 20px;
+						position: relative;
+						&:hover{
+						img.trai{
+								left: -20px;
+								opacity: 1;
+
+							}
+							img.phai{
+								right: -15px;
+								opacity: 1;
+							}
+						}
+
+						}
+					a.last{
+						padding-right: 0px;
+					}
+					a.active{
+						img.trai{
+								left: -20px;
+								opacity: 1;
+
+							}
+							img.phai{
+								left: 70px;
+								opacity: 1;
+							}
+					}
+					}
+				
+			}
+
+		}
+		.logo{
+			a{
+				img{
+					    margin-top: 30px
+				}
+			}
+		}
+		.cotphai{
+			padding-top: 70px;
+			padding-bottom: 30px;
+			justify-content: flex-end;
+			display: flex;
+			padding-right: 0px;
+			ul{
+				margin-bottom: 0px;
+				li{
+					float: left;
+					a{
+						img.trai{
+							position: absolute;
+							transform: rotate(90deg);
+							width: 41px;
+							    top: -10px;
+							    left: -60px;
+							    transition: 0.2s;
+							    opacity: 0;
+						}
+
+						
+					img.phai{
+							position: absolute;
+							top: 0px;
+						    right: -65px;
+						    width: 41px;
+						    height: 41px;
+						    transition: 0.2s;
+						    opacity: 0;
+						}
+						padding-right: 65px;
+						font-family: 'Oswald', sans-serif;
+						color: white;
+						font-size: 20px;
+						position: relative;
+						&:hover{
+						img.trai{
+								left: -20px;
+								opacity: 1;
+
+							}
+							img.phai{
+								right: -15px;
+								opacity: 1;
+							}
+						}
+
+						}
+					a.last{
+						padding-right: 0px;
+					}
+
+					}
+				
+			}
+
+		}
+	}	
+
+
+}
+
+// het phan menu
+
+
+.form{
+background: url(../images/bgform.jpg);
+position: absolute;
+top:830px;
+width: 100%;
+	.nentren{
+		background-color: #001519;
+	.form-chinh{
+
+		nav{
+				border: 2px solid #00ccff;
+				border-bottom: none;
+			.nav-tabs{
+				
+
+				a{
+					font-family: 'Oswald', sans-serif;
+					border-right: 2px solid #00ccff;
+					border-radius: 0px;
+					text-align: center;
+					color: white;
+				}
+				a.khachsan{
+					width: 30%;
+					background: url("../images/khachsan.png") no-repeat 40px -5px;
+			
+
+				}
+				a.tour{
+					width: 20%;
+					background: url("../images/tour.png") no-repeat 20px -5px;
+
+
+				}
+				a.datve{
+						width: 20%;
+						background: url("../images/datve.png") no-repeat 10px -5px;
+
+				}
+				a.thuexe{
+					border-right: none;
+					width: 30%;
+					background: url("../images/xe.png") no-repeat 40px -5px;
+
+				}
+				a.active{
+					background-color: #617376;
+				}
+			}
+	}
+
+			}}
+	.tab-content{
+				background-color: rgba(97,110,112,0.7);
+				padding-top: 50px;
+				padding-bottom: 95px;
+				border: 2px solid #00ccff;
+				border-left: none;
+				border-right: none;
+			.tab-pane{
+				h2{
+					font-family: 'Oswald';
+					font-weight: bold;
+					color: white;
+					display: block;
+
+				}
+				select{
+					width: 280px;
+					height: 35px;
+				}
+				input{
+					height: 35px;
+					width: 148px;
+				}
+			}
+	}
+	.nenduoi{
+		background-color: #001519;
+		height: 45px;
+	}
+		
+
+}
+
+// het phan form// het phan form// het phan form// het phan form
+
+
+.gioithieu{
+	height: 580px;
+	margin-top: 300px;
+		
+		.tieude{
+			width: 520px;
+			margin: 30px auto;
+			span{
+				font-family: 'Oswald';
+				font-weight: bold;
+				font-size: 25px;
+				
+
+
+			}
+			span.mauxanh{
+				color:#66ccff;	
+			}
+			p{
+				margin-top: 20px;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-style: italic;
+				text-align: center;
+			}
+
+		}
+	.content{
+		.motcot{
+			text-align: center;
+			position: relative;
+			padding: 50px 20px 20px 0px; 
+			transition: 0.3s;
+			.concac{
+				margin-bottom: 85px;
+			span{
+				font-family: 'Oswald';
+				font-weight: bold;
+				font-size: 22px;
+
+
+			}}
+			img{
+			    position: absolute;
+			    top: 80px;
+			    left: 100px;
+			    transition: 0.3s;
+			}
+			span.mauxanh{
+				color:#66ccff;
+			}
+			p{
+				font-family: 'Source Sans Pro', sans-serif;
+				font-style: italic;
+				
+				font-size: 14px;
+			}
+			a.btn{
+				border: 2px solid #00ccff;
+				color: black;
+				font-family: 'Oswald';
+				width: 150px;
+				position: absolute;
+				    bottom: -10px;
+				    left: 58px;
+				    z-index: 99;
+				    background-color: #fff;
+				    opacity: 0;
+				    transition: 0.3s;
+			}
+
+		&:hover{
+				border: 1px solid black;
+				-webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.75);
+
+				a.btn{
+					opacity: 1;
+					bottom: -20px;
+				}
+				img{
+					top: 100px;
+				}
+
+		}
+		}
+	
+
+	}
+
+}
+ // het phan thong tin gioi thuie
+
+.suluachon{
+	background: url("../images/bgluachon.jpg");
+	height: 509px;
+		.col-md-6{
+		height: 330px;
+
+
+		.tieude{
+			margin-top: 90px;
+			span{
+				font-family: 'Oswald';
+				font-weight: bold;
+				font-size: 25px;
+			}
+			span.mauxanh{
+				color:#66ccff;
+			}
+			p{
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 14px;
+				color: white;
+				font-style: italic;
+			}
+		}
+	.duoi{
+		display: flex;
+		.trai{
+			position: relative;
+			width: 50%;
+			h2{
+				font-family: 'Oswald';
+				font-weight: bold;
+				color: white;
+				position: absolute;
+				top: 152px;
+				left: 80px;
+				font-size: 40px;
+
+
+			}
+						img{
+				position: absolute;
+				top: 62px;
+				left: 5px;
+			}
+		}
+		.phai{
+			width: 50%;
+			position: relative;
+			h2{
+				font-family: 'Oswald';
+				font-weight: bold;
+				color: white;
+				position: absolute;
+				top: 135px;
+				left: 90px;
+				font-size: 35px;
+		
+			}
+			img{
+				position: absolute;
+				top: 60px;
+				left: 26px;
+			}
+		}
+
+
+	}}
+}
+
+
+//het phan su lua chon
+
+.canhsac{
+	height: 1050px;
+	
+		.tieude{
+			margin-top: 90px;
+			span{
+				font-family: 'Oswald';
+				font-weight: bold;
+				font-size: 25px;
+			}
+			span.mauxanh{
+				color:#66ccff;
+			}
+			p{
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 14px;
+				font-style: italic;
+			}
+		}
+	.canhdep{
+		.motcanh{
+			position: relative;
+			a.hinhtron{
+				position: absolute;
+				top: 20%;
+				left: 15%;
+				opacity: 0;
+
+			}
+			a.danang{
+				animation-delay: 1s;
+			
+			}
+				a.hoian{
+				animation-delay: 0.5s;
+			}
+				a.hue{
+				
+			}
+			&:hover{
+				opacity: 0.8;		
+			}
+		}
+	}
+			
+
+}
+
+
+//het phan canh sac
+	.solieu{
+		background:url("../images/bgsolieu.jpg");
+		.canhchinh{
+		height: 518px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		div{
+			position: relative;
+			font-size: 30px;
+			font-family: 'Oswald';
+			color: white;
+			img.khungtrai{
+					position: absolute;
+					top: 0;
+					left: 10px;
+					transform: rotate(90deg);
+			}
+			img.khungphai{
+				position: absolute;
+				top: 0;
+				right: 10px;
+				
+			}
+
+
+		}
+
+		}
+		
+
+
+	}
+
+	//het phan so lieu
+
+
+	.tour{
+				.tieude{
+			margin-top: 90px;
+			span{
+				font-family: 'Oswald';
+				font-weight: bold;
+				font-size: 25px;
+			}
+			span.mauxanh{
+				color:#66ccff;
+			}
+			p{
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 14px;
+				font-style: italic;
+				margin-top: 20px;
+			}
+		}
+
+		.bonhinh{
+			display: flex;
+			
+			div{
+				width: 20%;
+				height: 800px;
+				padding-top: 30px;
+				span{
+				font-family: 'Oswald';
+				font-size: 15px;
+				color: white;
+				font-family: 'Oswald';
+				font-weight: bold;
+			}
+			span.mauxanh{
+				color:#66ccff;
+			}
+
+			}
+			
+			
+			
+			p{
+				margin-top: 50%;
+				color:white;
+			}
+				a.btn{
+					border-radius: 0px;
+					border-width: 2px;
+				}
+			
+			div.truotvan{
+				background: url("../images/tuour1.jpg");
+
+				}
+					div.lanbien{
+				background: url("../images/tour2.jpg");
+
+				}
+					div.denlong{
+				background: url("../images/tour3.jpg");
+
+				}
+					div.canhac{
+				background: url("../images/tour5.jpg");
+
+				}
+					div.lamgom{
+				background: url("../images/tour4.jpg");
+
+				}
+
+			}
+
+
+
+
+
+			
+		
+		
+	}
+
+
+//het phan tuour
+
+				.tieude{
+			margin-top: 90px;
+			span{
+				font-family: 'Oswald';
+				font-weight: bold;
+				font-size: 25px;
+			}
+			span.mauxanh{
+				color:#66ccff;
+			}
+			p{
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 14px;
+				font-style: italic;
+				margin-top: 20px;
+				margin-bottom: 30px;
+			}
+		}
+.anhnensukien{
+	position: relative;
+		.motanh{
+			a{
+				img{
+
+				}
+			}
+		}
+			
+	.anhden{
+		position: absolute;
+		top: 0;
+		left: 500px;
+		opacity: 0;
+	}
+}
+//het phan su kien
+.footer{
+	background: url("../images/footer.jpg");
+	height: 600px;
+	.backgroun{
+			background: rgba(2,0,36,0.5);
+			height: 100%;
+			.logo{
+				margin-top: 50px;
+			}
+		
+	.infor{
+		p{
+			color: white;
+			i{
+				color: #57cbf5;
+			}
+	}
+}
+.hihi{
+	margin-top: 50px;
+	margin-left: 200px;
+	display: block;
+}
+}
+
+}
+.slide{
+	position: absolute;
+	z-index: 3;
+}
+.bienmatplay{
+		opacity: 0;
+}
+
+.xoaytron{
+	animation: chayxoaytron 2s forwards;
+}
+@-webkit-keyframes chayxoaytron{
+	0%{
+		transform:translateX(-300px);
+
+	}
+	100%{
+		transform:translateX(0px) rotate(360deg);
+		opacity: 1;
+	}			
+
+
+}
+.chaylungtung{
+	animation: chaychay 2s forwards;
+}
+
+@-webkit-keyframes chaychay{
+
+0%{
+		transform:translateX(300px);
+		opacity: 1;
+	}
+	30%{
+		transform:translateX(150px);
+		opacity: 1;
+	}	
+		70%{
+		transform:translateX(-485px);
+		opacity: 1;
+		animation-delay: 0.5s;
+	}		
+	100%{
+		opacity: 0;
+	}		
+}

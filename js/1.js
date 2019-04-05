@@ -56,6 +56,17 @@ new WOW().init();
 	
 });
 
+$(window).on('scroll', function(event) {
+	event.preventDefault();
+	pageyfx = $(window).scrollTop();
+	menufix = $('.menu-fixed');
+	if(pageyfx > 1400){
+		menufix.addClass('fixed-class');
+	}
+	else{
+		menufix.removeClass('fixed-class');
+	}	
+});
 
 
 
